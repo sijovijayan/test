@@ -9,7 +9,7 @@ angular.module('starter.controllers', [])
     $scope.isExpanded = false;
     $scope.hasHeaderFabLeft = false;
     $scope.hasHeaderFabRight = false;
-	
+	$scope.app = {};
 	$scope.app.title = 'Free Games and Apps Ltd.';
 
     var navIcons = document.getElementsByClassName('ion-navicon');
