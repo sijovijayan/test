@@ -1,0 +1,40 @@
+<ion-view view-title="{{profile.title}}">
+    <ion-content ng-class="{expanded:$scope.isExpanded}">
+        <div class="hero slide-up" style="background-image: url('img/profile-bg.jpg');">
+            <div class="content">
+                <div class="avatar" style="background-image: url('img/daenerys.jpg');"></div>
+                <h3><a class="light">{{profile.title}}</a></h3>
+            </div>
+        </div>
+        <h4 class="content padding double-padding-x">{{profile.subtitle}}</h4>
+		
+		<div class="list card">
+		  <div class="item item-icon-left">
+			<i class="icon ion-ios-telephone"></i>
+			{{profile.phone}}
+		  </div>
+		</div>
+		
+		<div class="list card">
+		  <div class="item item-icon-left">
+			<i class="icon ion-ios-email"></i>
+			{{profile.email}}
+		  </div>
+		</div>
+		
+		<div class="list card">
+		  <div class="item item-icon-left">
+			<i class="icon ion-ios-world"></i>
+			{{profile.website}}
+		  </div>
+		</div>
+		
+		<div class="list card">
+		  <div class="item item-icon-left item-text-wrap">
+			<i class="icon ion-ios-information-outline" style="height:52px"></i>
+			<p>{{profile.description}}</p>
+		  </div>
+		</div>
+		
+    </ion-content>
+</ion-view>
